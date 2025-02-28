@@ -1,0 +1,175 @@
+body.tema-claro {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #ffffff, #f7f7f7);
+  margin: 0;
+  padding: 0;
+}
+
+body.tema-escuro {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #333333, #444444);
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: linear-gradient(to bottom, #ffa07a, #ff9900);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header.tema-escuro {
+  background: linear-gradient(to bottom, #660033, #990033);
+}
+
+main {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+section.tema-escuro {
+  background-color: #555;
+  color: white;
+  border: 1px solid #666;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#cadastro input {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#cadastro input.tema-escuro {
+  background-color: #555;
+  color: white;
+  border: 1px solid #666;
+}
+
+#cadastro button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#cadastro button#adicionar {
+  background-color: #ccc;
+  color: black;
+}
+
+#cadastro button#adicionar.tema-escuro {
+  background-color: #666;
+  color: white;
+}
+
+#cadastro button:hover {
+  opacity: 0.9;
+}
+
+#configuracao input {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#configuracao input.tema-escuro {
+  background-color: #555;
+  color: white;
+  border: 1px solid #666;
+}
+
+#configuracao button#sortear {
+  background: linear-gradient(to bottom, #ff9900, #ffa07a);
+  color: white;
+}
+
+#configuracao button#sortear.tema-escuro {
+  background: linear-gradient(to bottom, #660033, #990033);
+}
+
+#atletas-cadastrados {
+  margin-top: 10px;
+}
+
+#atletas-cadastrados div {
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+#atletas-cadastrados div.tema-escuro {
+  border-bottom: 1px solid #666;
+}
+
+#resultado {
+  padding: 20px;
+}
+
+.time {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.time.tema-escuro {
+  background-color: #555;
+  color: white;
+  border: 1px solid #666;
+}
+
+.time h2 {
+  margin-top: 0;
+}
+
+.time ul {
+  list-style: none;
+  padding: 0;
+}
+
+.time li {
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+.time li.tema-escuro {
+  border-bottom: 1px solid #666;
+}
+
+.time li:last-child {
+  border-bottom: none;
+}
+
+.btn-toggle-tema {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-toggle-tema.tema-claro {
+  background-color: #ccc;
+  color: black;
+}
+
+.btn-toggle-tema.tema-escuro {
+  background-color: #666;
+  color: white;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volêi dos Crias</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="tema-claro">
+    <header>
+        <h1>Vôlei Dos Crias</h1>
+        <button id="toggle-tema" class="btn-toggle-tema">Tema Escuro</button>
+    </header>
+    <main>
+        <section id="cadastro">
+            <h2>Cadastro de Atletas</h2>
+            <input type="text" id="nome" placeholder="Nome do Atleta">
+            <input type="number" id="estrelas" min="0" max="5" step="0.5" placeholder="Estrelas (0 a 5)">
+            <button id="adicionar">Adicionar Atleta</button>
+            <div id="atletas-cadastrados"></div>
+        </section>
+        <section id="configuracao">
+            <h2>Configuração do Sorteio</h2>
+            <input type="number" id="numTimes" min="2" max="10" placeholder="Número de Times">
+            <input type="number" id="numJogadoresPorTime" min="1" placeholder="Número de Jogadores por Time">
+            <button id="sortear">Sortear Times</button>
+        </section>
+        <section id="resultado">
+            <h2>Resultado do Sorteio</h2>
+            <div id="times"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
