@@ -1,175 +1,137 @@
+/* Tema Claro */
 body.tema-claro {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(to bottom, #ffffff, #f7f7f7);
-  margin: 0;
-  padding: 0;
-}
+   --cor-fundo: #f8f9fa;
+   --cor-texto: #2d3436;
+   --cor-header: linear-gradient(to left, #ffa07a, #ff9900);
+   --cor-section: #ffffff;
+   --borda-section: #e0e0e0;
+   --cor-botao: #ff7675;
+   --cor-botao-hover: #ff5252;
+   --cor-botao-escuro: #6c757d;
+ }
 
-body.tema-escuro {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(to bottom, #333333, #444444);
-  color: white;
-  margin: 0;
-  padding: 0;
-}
+ /* Tema Escuro */
+ body.tema-escuro {
+   --cor-fundo: #2d3436;
+   --cor-texto: #dfe6e9;
+   --cor-header: linear-gradient(to right, #FF9900, #FFA07A);
+   --cor-section: #404040;
+   --borda-section: #555555;
+   --cor-botao: #e17055;
+   --cor-botao-hover: #d35400;
+   --cor-botao-escuro: #4a4a4a;
+ }
 
-header {
-  background: linear-gradient(to bottom, #ffa07a, #ff9900);
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-
-header.tema-escuro {
-  background: linear-gradient(to bottom, #660033, #990033);
-}
-
-main {
-  max-width: 800px;
-  margin: auto;
-  padding: 20px;
-}
-
-section {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-}
-
-section.tema-escuro {
-  background-color: #555;
-  color: white;
-  border: 1px solid #666;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-#cadastro input {
-  padding: 10px;
-  margin: 5px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-
-#cadastro input.tema-escuro {
-  background-color: #555;
-  color: white;
-  border: 1px solid #666;
-}
-
-#cadastro button {
-  padding: 10px 20px;
-  margin: 5px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-#cadastro button#adicionar {
-  background-color: #ccc;
-  color: black;
-}
-
-#cadastro button#adicionar.tema-escuro {
-  background-color: #666;
-  color: white;
-}
-
-#cadastro button:hover {
-  opacity: 0.9;
-}
-
-#configuracao input {
-  padding: 10px;
-  margin: 5px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-
-#configuracao input.tema-escuro {
-  background-color: #555;
-  color: white;
-  border: 1px solid #666;
-}
-
-#configuracao button#sortear {
-  background: linear-gradient(to bottom, #ff9900, #ffa07a);
-  color: white;
-}
-
-#configuracao button#sortear.tema-escuro {
-  background: linear-gradient(to bottom, #660033, #990033);
-}
-
-#atletas-cadastrados {
-  margin-top: 10px;
-}
-
-#atletas-cadastrados div {
-  padding: 5px;
-  border-bottom: 1px solid #ddd;
-}
-
-#atletas-cadastrados div.tema-escuro {
-  border-bottom: 1px solid #666;
-}
-
-#resultado {
-  padding: 20px;
-}
-
-.time {
-  background-color: #f0f0f0;
-  padding: 10px;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-
-.time.tema-escuro {
-  background-color: #555;
-  color: white;
-  border: 1px solid #666;
-}
-
-.time h2 {
-  margin-top: 0;
-}
-
-.time ul {
-  list-style: none;
-  padding: 0;
-}
-
-.time li {
-  padding: 5px;
-  border-bottom: 1px solid #ddd;
-}
-
-.time li.tema-escuro {
-  border-bottom: 1px solid #666;
-}
-
-.time li:last-child {
-  border-bottom: none;
-}
-
-.btn-toggle-tema {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  padding: 5px 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.btn-toggle-tema.tema-claro {
-  background-color: #ccc;
-  color: black;
-}
-
-.btn-toggle-tema.tema-escuro {
-  background-color: #666;
-  color: white;
-}
+ /* Estilos Base */
+ body {
+   font-family: 'Segoe UI', Arial, sans-serif;
+   background: var(--cor-fundo);
+   color: var(--cor-texto);
+   transition: all 0.3s ease;
+   min-height: 100vh;
+ }
+ 
+ header {
+   background: var(--cor-header);
+   padding: 1.5rem;
+   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+ }
+ 
+ main {
+   max-width: 800px;
+   margin: 0 auto;
+   padding: 1rem;
+ }
+ 
+ section {
+   background: var(--cor-section);
+   border: 1px solid var(--borda-section);
+   border-radius: 12px;
+   padding: 1.5rem;
+   margin-bottom: 1.5rem;
+   box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+ }
+ 
+ /* Componentes Interativos */
+ button {
+   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+ }
+ 
+ #adicionar, #sortear {
+   background: var(--cor-botao);
+   color: white;
+   border: none;
+   padding: 0.8rem 1.5rem;
+   border-radius: 8px;
+   cursor: pointer;
+ }
+ 
+ #adicionar:hover, #sortear:hover {
+   background: var(--cor-botao-hover);
+   transform: translateY(-1px);
+ }
+ 
+ .btn-toggle-tema {
+   background: var(--cor-botao-escuro);
+   color: white;
+   padding: 0.5rem 1rem;
+   border-radius: 25px;
+   border: none;
+   position: fixed;
+   top: 1rem;
+   right: 1rem;
+   z-index: 1000;
+ }
+ 
+ /* Lista de Atletas */
+ #atletas-cadastrados div {
+   padding: 1rem;
+   margin: 0.5rem 0;
+   background: var(--cor-section);
+   border: 1px solid var(--borda-section);
+   border-radius: 8px;
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+ }
+ 
+ /* Times */
+ .time {
+   background: var(--cor-section);
+   border: 1px solid var(--borda-section);
+   border-radius: 12px;
+   padding: 1rem;
+   margin-bottom: 1rem;
+ }
+ 
+ .time li {
+   padding: 0.5rem;
+   border-bottom: 1px solid var(--borda-section);
+ }
+ 
+ /* Inputs */
+ input {
+   background: var(--cor-section);
+   color: var(--cor-texto);
+   border: 1px solid var(--borda-section);
+   padding: 0.8rem;
+   border-radius: 8px;
+   width: 100%;
+   box-sizing: border-box;
+ }
+ 
+ /* Responsividade */
+ @media (max-width: 768px) {
+   main {
+     padding: 0.5rem;
+   }
+ 
+   section {
+     padding: 1rem;
+   }
+ 
+   .btn-toggle-tema {
+     top: 0.5rem;
+     right: 0.5rem;
+   }
+ }

@@ -65,9 +65,8 @@ O **Vôlei dos Crias** é um site criado para facilitar o cadastro de atletas e 
 ---
 
 ## 🔮 Melhorias Futuras
-✨ Adicionar armazenamento local para manter os atletas cadastrados após recarregar a página.  
-✨ Implementar sorteio baseado no nível dos jogadores para formar times mais equilibrados.  
-✨ Criar opção de edição e remoção de atletas da lista.  
+✨ Adicionar um sistema de ranking baseado em pontos com a classificação do time.  
+✨ Implementar uma função para penalidades a serem colocadas em atletas. 
 
 ---
 
